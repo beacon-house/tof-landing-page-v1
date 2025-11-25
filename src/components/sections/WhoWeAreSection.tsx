@@ -57,7 +57,7 @@ export const WhoWeAreSection: React.FC = () => {
 
           <div className="space-y-3 text-xl md:text-2xl font-semibold text-navy">
             <p>This is not mass counselling.</p>
-            <p>This is the opposite.</p>
+            <p>This is the <span className="font-cursive text-[1.4em] relative inline-block" style={{borderBottom: '2px solid rgba(253, 183, 26, 0.5)', paddingBottom: '2px'}}>opposite</span>.</p>
           </div>
         </TextContainer>
       </div>

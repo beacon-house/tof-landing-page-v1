@@ -14,6 +14,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         serif: ['Merriweather', 'Georgia', 'serif'],
+        cursive: ['Caveat', 'cursive'],
       },
       spacing: {
         '18': '4.5rem',

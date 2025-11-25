@@ -45,7 +45,7 @@ export const AuthoritySection: React.FC = () => {
           </ul>
 
           <p className="text-2xl md:text-3xl font-bold text-navy">
-            Admissions teams reward clarity.
+            Admissions teams reward <span className="font-cursive text-[1.4em] relative inline-block" style={{borderBottom: '2px solid rgba(253, 183, 26, 0.5)', paddingBottom: '2px'}}>clarity</span>.
           </p>
         </TextContainer>
       </div>
