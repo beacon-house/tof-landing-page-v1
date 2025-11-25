@@ -43,7 +43,7 @@ export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore
             Learn More
           </Button>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-navy/60">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm font-medium text-navy/90">
             <span>35+ top IB & IGCSE schools</span>
             <span className="hidden sm:inline">|</span>
             <span>150+ Former Admissions Officers</span>
