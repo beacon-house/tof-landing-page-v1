@@ -1,9 +1,9 @@
-// Section A - Hero section with Learn More CTA
+// Section A - Hero section with single primary CTA to talk to founders
 import React from 'react'
 import { Button } from '../Button'
 import { StatPill } from '../StatPill'
 
-export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore }) => {
+export const HeroSection: React.FC<{ onApplyToTalk: () => void }> = ({ onApplyToTalk }) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-white pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -36,8 +36,8 @@ export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore
             it's not having <span className="cursive-keyword">clarity</span> on the path.
           </p>
 
-          <Button onClick={onLearnMore} variant="primary" className="min-w-[200px]">
-            Learn More
+          <Button onClick={onApplyToTalk} variant="primary" className="min-w-[200px]">
+            Talk to Founders
           </Button>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm font-medium text-navy/90">

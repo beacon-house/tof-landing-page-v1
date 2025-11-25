@@ -1,13 +1,21 @@
-// Sticky header with minimal clean design
+// Sticky header with dynamic CTA appearing after first scroll and enhanced navigation
 import React, { useState, useEffect } from 'react'
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  onCTAClick: () => void
+}
+
+export const Header: React.FC<HeaderProps> = ({ onCTAClick }) => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [showHeaderCTA, setShowHeaderCTA] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
+      const scrollPosition = window.scrollY
+      setIsScrolled(scrollPosition > 20)
+      // Show CTA after scrolling past one viewport height
+      setShowHeaderCTA(scrollPosition > window.innerHeight)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -38,30 +46,39 @@ export const Header: React.FC = () => {
             />
           </div>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
+            <button
+              onClick={() => scrollToSection('bridge')}
+              className="text-navy hover:text-gold transition-colors font-medium text-sm"
+            >
+              Our Approach
+            </button>
             <button
               onClick={() => scrollToSection('about')}
-              className="text-navy hover:text-gold transition-colors font-medium"
+              className="text-navy hover:text-gold transition-colors font-medium text-sm"
             >
-              About
+              Who We Are
             </button>
             <button
               onClick={() => scrollToSection('process')}
-              className="text-navy hover:text-gold transition-colors font-medium"
+              className="text-navy hover:text-gold transition-colors font-medium text-sm"
             >
               Process
             </button>
             <button
               onClick={() => scrollToSection('results')}
-              className="text-navy hover:text-gold transition-colors font-medium"
+              className="text-navy hover:text-gold transition-colors font-medium text-sm"
             >
               Results
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
-              className="bg-gold text-navy px-6 py-2 rounded-lg font-semibold hover:bg-gold/90 transition-all"
+              onClick={onCTAClick}
+              className={`bg-gold text-navy px-5 py-2 rounded-lg font-semibold hover:bg-gold/90 transition-all text-sm ${
+                showHeaderCTA ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
+              }`}
+              style={{ transition: 'all 0.3s ease-in-out' }}
             >
-              Contact
+              Talk to Founders
             </button>
           </nav>
 
@@ -93,10 +110,16 @@ export const Header: React.FC = () => {
         <div className="md:hidden fixed inset-0 top-16 bg-white z-40">
           <nav className="px-6 py-8 space-y-6 h-full">
             <button
+              onClick={() => scrollToSection('bridge')}
+              className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
+            >
+              Our Approach
+            </button>
+            <button
               onClick={() => scrollToSection('about')}
               className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
             >
-              About
+              Who We Are
             </button>
             <button
               onClick={() => scrollToSection('process')}
@@ -109,12 +132,6 @@ export const Header: React.FC = () => {
               className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
             >
               Results
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
-            >
-              Contact
             </button>
           </nav>
         </div>

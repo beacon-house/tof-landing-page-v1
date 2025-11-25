@@ -18,11 +18,9 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [modalType, setModalType] = useState<'call' | 'evaluation'>('call')
 
-  const handleLearnMore = () => {
-    const painPointSection = document.getElementById('pain-point')
-    if (painPointSection) {
-      painPointSection.scrollIntoView({ behavior: 'smooth' })
-    }
+  const handleApplyToTalk = () => {
+    setModalType('call')
+    setIsModalOpen(true)
   }
 
   const handleUnderstandApproach = () => {
@@ -44,10 +42,10 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
-      <Header />
+      <Header onCTAClick={handleApplyToTalk} />
 
       <main>
-        <HeroSection onLearnMore={handleLearnMore} />
+        <HeroSection onApplyToTalk={handleApplyToTalk} />
         <PainPointSection />
         <AuthoritySection />
         <BridgeSection onCTAClick={handleUnderstandApproach} />
