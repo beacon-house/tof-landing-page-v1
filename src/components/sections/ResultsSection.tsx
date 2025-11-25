@@ -1,7 +1,6 @@
-// Section F - Results section with university logos and stats - compact single fold design
+// Section F - Results section with university logos and stats - full width design
 import React from 'react'
 import { Section } from '../Section'
-import { TextContainer } from '../TextContainer'
 
 export const ResultsSection: React.FC = () => {
   const universities = [
@@ -14,7 +13,12 @@ export const ResultsSection: React.FC = () => {
     { name: 'Oxford', file: 'oxford.png' },
     { name: 'Cambridge', file: 'cambridge.png' },
     { name: 'Imperial', file: 'imperial.png' },
-    { name: 'UC Berkeley', file: 'uc-berkeley.png' }
+    { name: 'UC Berkeley', file: 'uc-berkeley.png' },
+    { name: 'Brown', file: 'brown.png' },
+    { name: 'Duke', file: 'duke.png' },
+    { name: 'UChicago', file: 'uchicago.png' },
+    { name: 'NYU', file: 'nyu.png' },
+    { name: 'UCLA', file: 'ucla.png' }
   ]
 
   const stats = [
@@ -26,63 +30,62 @@ export const ResultsSection: React.FC = () => {
 
   return (
     <Section id="results" className="relative py-12 md:py-16">
-      <TextContainer center>
-        <div className="mb-3">
-          <span className="text-xs font-semibold tracking-widest uppercase text-gold">
-            Our Results
-          </span>
-        </div>
+      {/* Header - Centered */}
+      <div className="text-center mb-3">
+        <span className="text-xs font-semibold tracking-widest uppercase text-gold">
+          Our Results
+        </span>
+      </div>
 
-        <p className="font-serif text-xl md:text-2xl text-navy mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto">
-          When clarity and effort come together, great outcomes follow naturally.
-        </p>
+      <p className="font-serif text-xl md:text-2xl text-navy mb-8 md:mb-10 leading-relaxed text-center">
+        When clarity and effort come together, great outcomes follow naturally.
+      </p>
 
-        {/* University Logos Grid - Compact 2 Rows */}
-        <div className="grid grid-cols-5 gap-3 md:gap-4 mb-8 md:mb-10 max-w-3xl mx-auto">
-          {universities.map((university) => (
-            <div
-              key={university.name}
-              className="aspect-square bg-gray-100 rounded-lg flex items-center justify-center p-2 md:p-3 transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-              title={university.name}
-            >
-              <img
-                src={`/uni-logos/${university.file}`}
-                alt={`${university.name} logo`}
-                className="w-full h-full object-contain"
-                loading="lazy"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement
-                  target.style.display = 'none'
-                  const parent = target.parentElement
-                  if (parent) {
-                    parent.innerHTML = `<span class="text-[10px] md:text-xs font-semibold text-gray-400 text-center leading-tight">${university.name}</span>`
-                  }
-                }}
-              />
+      {/* University Logos Grid - Full Width 3 Rows */}
+      <div className="grid grid-cols-5 gap-6 md:gap-8 mb-10 md:mb-12">
+        {universities.map((university) => (
+          <div
+            key={university.name}
+            className="aspect-square bg-gray-100 rounded-lg flex items-center justify-center p-4 md:p-5 transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
+            title={university.name}
+          >
+            <img
+              src={`/uni-logos/${university.file}`}
+              alt={`${university.name} logo`}
+              className="w-full h-full object-contain"
+              loading="lazy"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement
+                target.style.display = 'none'
+                const parent = target.parentElement
+                if (parent) {
+                  parent.innerHTML = `<span class="text-xs md:text-sm font-semibold text-gray-400 text-center">${university.name}</span>`
+                }
+              }}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Stats Section */}
+      <div className="mb-6 md:mb-8 text-center">
+        <h2 className="text-xl md:text-2xl font-semibold text-navy">
+          Why The Most Ambitious Families Choose Us
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        {stats.map((stat, index) => (
+          <div key={index} className="text-center">
+            <div className="text-4xl md:text-5xl font-bold text-gold mb-3 md:mb-4 whitespace-nowrap">
+              {stat.number}
             </div>
-          ))}
-        </div>
-
-        {/* Stats Section */}
-        <div className="mb-4 md:mb-6">
-          <h2 className="text-xl md:text-2xl font-semibold text-navy text-center">
-            Why The Most Ambitious Families Choose Us
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center p-2 md:p-3">
-              <div className="text-3xl md:text-4xl font-bold text-gold mb-2">
-                {stat.number}
-              </div>
-              <p className="text-xs md:text-sm text-gray-700 leading-snug">
-                {stat.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </TextContainer>
+            <p className="text-sm md:text-base text-gray-700 leading-snug">
+              {stat.description}
+            </p>
+          </div>
+        ))}
+      </div>
     </Section>
   )
 }
