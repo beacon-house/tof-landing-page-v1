@@ -39,36 +39,38 @@ const processSteps: ProcessStep[] = [
 
 export const ProcessSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick }) => {
   return (
-    <Section id="process">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
-          Our Process
-        </h2>
-      </div>
+    <Section id="process" className="relative min-h-screen flex items-center bg-lightGray">
+      <div className="w-full">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+            Our Process
+          </h2>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        {processSteps.map((step) => (
-          <div
-            key={step.number}
-            className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
-          >
-            <div className="text-4xl font-bold text-gold mb-4">
-              {step.number}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {processSteps.map((step) => (
+            <div
+              key={step.number}
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 duration-300"
+            >
+              <div className="w-14 h-14 rounded-full bg-gold flex items-center justify-center mb-6">
+                <span className="text-3xl font-bold text-navy">{step.number}</span>
+              </div>
+              <h3 className="text-xl font-bold text-navy mb-4">
+                {step.title}
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {step.description}
+              </p>
             </div>
-            <h3 className="text-xl font-bold text-navy mb-4">
-              {step.title}
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              {step.description}
-            </p>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <div className="text-center">
-        <Button onClick={onCTAClick} variant="secondary">
-          See How This Works
-        </Button>
+        <div className="text-center">
+          <Button onClick={onCTAClick} variant="secondary">
+            See How This Works
+          </Button>
+        </div>
       </div>
     </Section>
   )

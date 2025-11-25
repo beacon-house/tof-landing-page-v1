@@ -13,12 +13,16 @@ const trustPoints = [
 
 export const TrustSection: React.FC = () => {
   return (
-    <Section id="trust">
-      <div className="max-w-4xl mx-auto">
+    <Section id="trust" className="relative min-h-screen flex items-center bg-lightGray">
+      <div className="max-w-4xl mx-auto w-full">
+        <h2 className="text-3xl md:text-4xl font-bold text-navy mb-16 text-center">
+          Why Families Choose Us
+        </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {trustPoints.map((point, index) => (
-            <div key={index} className="flex items-start">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold flex items-center justify-center mr-4 mt-1">
+            <div key={index} className="flex items-start bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center mr-4 mt-1">
                 <svg
                   className="w-5 h-5 text-navy"
                   fill="none"

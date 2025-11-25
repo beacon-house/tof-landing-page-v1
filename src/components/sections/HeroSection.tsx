@@ -5,7 +5,17 @@ import { Button } from '../Button'
 export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore }) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-white pt-20">
-      <div className="max-w-content mx-auto px-6 md:px-8 lg:px-12 py-16 md:py-24">
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2070&auto=format&fit=crop"
+          alt="Student and parent collaboration"
+          className="w-full h-full object-cover opacity-10"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/95 to-white"></div>
+      </div>
+
+      <div className="relative z-10 max-w-content mx-auto px-6 md:px-8 lg:px-12 py-16 md:py-24">
         <div className="max-w-text mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-8">
             The Hardest Part of Admissions Is Knowing What Actually Matters.

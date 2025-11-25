@@ -11,26 +11,30 @@ export const ResultsSection: React.FC = () => {
   ]
 
   return (
-    <Section id="results">
+    <Section id="results" className="relative min-h-screen flex items-center">
       <TextContainer center>
         <p className="font-serif text-2xl md:text-3xl text-navy mb-6 leading-relaxed">
           When clarity and effort come together,<br className="hidden sm:inline" />
           <span className="font-bold">great outcomes follow naturally.</span>
         </p>
 
-        <p className="text-lg md:text-xl text-gray-700 mb-12">
+        <p className="text-lg md:text-xl text-gray-700 mb-16">
           Our students have earned admits to leading universities:
         </p>
 
-        <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 text-base md:text-lg text-navy">
+        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-5 text-base md:text-lg text-navy mb-12">
           {universities.map((university, index) => (
             <React.Fragment key={university}>
-              <span className="font-medium">{university}</span>
+              <span className="font-semibold">{university}</span>
               {index < universities.length - 1 && (
-                <span className="text-gold">•</span>
+                <span className="text-gold text-xl">•</span>
               )}
             </React.Fragment>
           ))}
+        </div>
+
+        <div className="mt-12 text-center text-sm text-gray-500">
+          University logos will be displayed here
         </div>
       </TextContainer>
     </Section>
