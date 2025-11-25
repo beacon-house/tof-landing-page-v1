@@ -29,12 +29,12 @@ export const Header: React.FC = () => {
       }`}
     >
       <div className="max-w-content mx-auto px-6 md:px-8 lg:px-12">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex-shrink-0">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex-shrink-0 max-w-[60%] md:max-w-none">
             <img
               src="/bh-ig-logo.png"
               alt="Beacon House"
-              className="h-12 w-auto"
+              className="h-8 md:h-12 w-auto"
             />
           </div>
 
@@ -90,29 +90,29 @@ export const Header: React.FC = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
-          <nav className="px-6 py-4 space-y-3">
+        <div className="md:hidden fixed inset-0 top-16 bg-white z-40">
+          <nav className="px-6 py-8 space-y-6 h-full">
             <button
               onClick={() => scrollToSection('about')}
-              className="block w-full text-left py-3 text-navy font-medium"
+              className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('process')}
-              className="block w-full text-left py-3 text-navy font-medium"
+              className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
             >
               Process
             </button>
             <button
               onClick={() => scrollToSection('results')}
-              className="block w-full text-left py-3 text-navy font-medium"
+              className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
             >
               Results
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="block w-full text-left py-3 text-navy font-medium"
+              className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
             >
               Contact
             </button>

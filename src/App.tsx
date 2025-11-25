@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import { StickyMobileCTA } from './components/StickyMobileCTA'
 import { HeroSection } from './components/sections/HeroSection'
 import { PainPointSection } from './components/sections/PainPointSection'
 import { AuthoritySection } from './components/sections/AuthoritySection'
@@ -68,6 +69,8 @@ function App() {
       </main>
 
       <Footer />
+
+      <StickyMobileCTA onClick={handleBookCall} />
 
       <LeadCaptureModal
         isOpen={isModalOpen}
