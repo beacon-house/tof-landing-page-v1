@@ -38,7 +38,7 @@ const processSteps: ProcessStep[] = [
 
 export const ProcessSection: React.FC = () => {
   return (
-    <Section id="process" className="relative py-16 md:py-20 flex items-center bg-lightGray">
+    <Section id="process" className="relative py-12 md:py-16 flex items-center bg-lightGray">
       <div className="w-full">
         {/* Label */}
         <div className="text-center mb-5">

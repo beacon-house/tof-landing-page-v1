@@ -13,8 +13,8 @@ const trustPoints = [
 
 export const TrustSection: React.FC = () => {
   return (
-    <Section id="trust" className="relative py-16 md:py-20 flex items-center bg-lightGray">
-      <div className="max-w-5xl mx-auto w-full">
+    <Section id="trust" className="relative py-12 md:py-16 flex items-center bg-lightGray">
+      <div className="w-full">
         {/* Section Marker */}
         <div className="text-center mb-5">
           <span className="text-xs font-semibold tracking-widest uppercase text-gold">
@@ -22,21 +22,20 @@ export const TrustSection: React.FC = () => {
           </span>
         </div>
 
-        {/* Three Opening Lines */}
-        <div className="text-center mb-8 md:mb-10 space-y-3 md:space-y-4">
-          <p className="font-serif text-xl md:text-2xl text-navy leading-relaxed">
-            Admissions doesn't have to feel chaotic.
-          </p>
-          <p className="font-serif text-xl md:text-2xl text-navy leading-relaxed">
-            Clarity is possible.
+        {/* Opening Lines */}
+        <div className="text-center mb-8 md:mb-10">
+          <p className="font-serif text-xl md:text-2xl text-navy leading-relaxed mb-3">
+            <span className="block md:inline">Admissions doesn't have to feel chaotic.</span>
+            <span className="hidden md:inline"> </span>
+            <span className="block md:inline">Clarity is possible.</span>
           </p>
           <p className="font-serif text-xl md:text-2xl font-bold text-navy leading-relaxed">
-            And it changes <span className="cursive-keyword">everything</span>.
+            This is why families <span className="cursive-keyword">choose</span> us.
           </p>
         </div>
 
         {/* Trust Points */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
           {trustPoints.map((point, index) => (
             <div key={index} className="flex items-start bg-white p-4 md:p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold flex items-center justify-center mr-3 mt-0.5">

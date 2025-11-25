@@ -35,11 +35,6 @@ function App() {
     setIsModalOpen(true)
   }
 
-  const handleRequestEvaluation = () => {
-    setModalType('evaluation')
-    setIsModalOpen(true)
-  }
-
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Header onCTAClick={handleApplyToTalk} />
@@ -53,10 +48,7 @@ function App() {
         <ResultsSection />
         <ProcessSection />
         <TrustSection />
-        <FinalCloseSection
-          onPrimaryCTA={handleBookCall}
-          onSecondaryCTA={handleRequestEvaluation}
-        />
+        <FinalCloseSection />
       </main>
 
       <Footer />
