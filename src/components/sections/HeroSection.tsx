@@ -9,12 +9,12 @@ export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore
         <img
           src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2128&auto=format&fit=crop"
           alt="Educational environment"
-          className="w-full h-full object-cover object-center opacity-[0.06]"
-          style={{ filter: 'blur(0.5px)' }}
+          className="w-full h-full object-cover object-center opacity-[0.15]"
+          style={{ filter: 'blur(1px)' }}
           loading="eager"
         />
-        <div className="absolute inset-0 backdrop-blur-[2px] bg-white/80"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/70 to-white/90"></div>
+        <div className="absolute inset-0 backdrop-blur-sm bg-white/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/60 to-white/80"></div>
       </div>
 
       <div className="relative z-10 max-w-content mx-auto px-6 md:px-8 lg:px-12 py-16 md:py-24">
