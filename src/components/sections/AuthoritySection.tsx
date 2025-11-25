@@ -17,7 +17,13 @@ export const AuthoritySection: React.FC = () => {
         </div>
 
         <TextContainer className="order-1 lg:order-2">
-          <p className="text-xl md:text-2xl text-navy mb-12 leading-relaxed">
+          <div className="mb-6">
+            <span className="text-xs font-semibold tracking-widest uppercase text-gold">
+              What Actually Matters
+            </span>
+          </div>
+
+          <p className="font-serif text-2xl md:text-3xl text-navy mb-12 leading-relaxed">
             In today's admissions world, what matters is:
           </p>
 

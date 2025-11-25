@@ -9,12 +9,6 @@ export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick
     <Section id="bridge" className="relative min-h-screen flex items-center bg-lightGray">
       <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
         <TextContainer>
-          <div className="mb-6">
-            <span className="text-xs font-semibold tracking-widest uppercase text-gold">
-              What Actually Matters
-            </span>
-          </div>
-
           <p className="text-xl md:text-2xl text-navy mb-12 leading-relaxed">
             We help families understand:
           </p>
