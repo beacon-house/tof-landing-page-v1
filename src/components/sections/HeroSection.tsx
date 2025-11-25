@@ -43,7 +43,15 @@ export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore
             Learn More
           </Button>
 
-          <div className="mt-16 flex justify-center">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-navy/60">
+            <span>35+ top IB & IGCSE schools</span>
+            <span className="hidden sm:inline">|</span>
+            <span>150+ Former Admissions Officers</span>
+            <span className="hidden sm:inline">|</span>
+            <span>120+ Ivy League admits (2024)</span>
+          </div>
+
+          <div className="mt-[60px] flex justify-center">
             <div className="animate-bounce">
               <svg
                 className="w-6 h-6 text-gold"
