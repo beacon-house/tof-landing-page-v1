@@ -8,6 +8,12 @@ export const PainPointSection: React.FC = () => {
     <Section id="pain-point" className="relative min-h-screen flex items-center">
       <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
         <TextContainer>
+          <div className="mb-6">
+            <span className="text-xs font-semibold tracking-widest uppercase text-gold">
+              The Real Problem
+            </span>
+          </div>
+
           <p className="font-serif text-2xl md:text-3xl text-navy mb-12 leading-relaxed">
             If this feels familiar, you're not alone:
           </p>
