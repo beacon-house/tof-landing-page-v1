@@ -1,42 +1,179 @@
-// Section F - Results section with university names
+// Section F - Results section with correct narrative flow and one-fold optimization
 import React from 'react'
 import { Section } from '../Section'
-import { TextContainer } from '../TextContainer'
 
 export const ResultsSection: React.FC = () => {
   const universities = [
-    'Harvard', 'Yale', 'Brown', 'UPenn', 'Columbia', 'Duke',
-    'UC Berkeley', 'UCLA', 'UChicago', 'NYU', 'Georgia Tech',
-    'Imperial', 'Cambridge', 'NUS', 'NTU'
+    { name: 'Harvard', file: 'harvard.png' },
+    { name: 'Yale', file: 'yale.png' },
+    { name: 'Stanford', file: 'stanford.png' },
+    { name: 'MIT', file: 'mit.png' },
+    { name: 'Princeton', file: 'princeton.png' },
+    { name: 'Columbia', file: 'columbia.png' },
+    { name: 'Oxford', file: 'oxford.png' },
+    { name: 'Cambridge', file: 'cambridge.png' },
+    { name: 'Imperial', file: 'imperial.png' },
+    { name: 'UC Berkeley', file: 'uc-berkeley.png' },
+    { name: 'Brown', file: 'brown.png' },
+    { name: 'Duke', file: 'duke.png' },
+    { name: 'UChicago', file: 'uchicago.png' },
+    { name: 'NYU', file: 'nyu.png' },
+    { name: 'UCLA', file: 'ucla.png' }
+  ]
+
+  const comparisonData = [
+    {
+      university: 'Harvard',
+      otherStudents: 3,
+      ourStudents: 15,
+      multiplier: '4.3X'
+    },
+    {
+      university: 'Oxford',
+      otherStudents: 9,
+      ourStudents: 29,
+      multiplier: '3.2X'
+    },
+    {
+      university: 'Cambridge',
+      otherStudents: 11,
+      ourStudents: 36,
+      multiplier: '3.3X'
+    },
+    {
+      university: 'MIT',
+      otherStudents: 4,
+      ourStudents: 21,
+      multiplier: '5.4X'
+    }
+  ]
+
+  const stats = [
+    { number: '150+', description: 'Former Ivy League Admissions Officers' },
+    { number: '$4 Mn+', description: 'Scholarships Secured' },
+    { number: '100%', description: 'Research & Internship Placements' },
+    { number: '99%', description: 'Family Satisfaction Rate' }
   ]
 
   return (
-    <Section id="results" className="relative min-h-screen flex items-center">
-      <TextContainer center>
-        <p className="font-serif text-2xl md:text-3xl text-navy mb-6 leading-relaxed">
-          When clarity and effort come together,<br className="hidden sm:inline" />
-          <span className="font-bold">great outcomes follow <span className="cursive-keyword">naturally</span>.</span>
-        </p>
+    <Section id="results" className="relative">
+      {/* Label */}
+      <div className="text-center mb-5">
+        <span className="text-xs font-semibold tracking-widest uppercase text-gold">
+          Proven Results
+        </span>
+      </div>
 
-        <p className="text-lg md:text-xl text-gray-700 mb-16">
-          Our students have earned admits to leading universities:
-        </p>
+      {/* Main Heading - Using proper serif font like other sections */}
+      <p className="font-serif text-2xl md:text-3xl text-navy mb-6 md:mb-8 leading-relaxed text-center">
+        When clarity and effort come together, great outcomes follow naturally.
+      </p>
 
-        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-5 text-base md:text-lg text-navy mb-12">
-          {universities.map((university, index) => (
-            <React.Fragment key={university}>
-              <span className="font-semibold">{university}</span>
-              {index < universities.length - 1 && (
-                <span className="text-gold text-xl">•</span>
-              )}
-            </React.Fragment>
+      {/* Stats Section - Right after heading */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-10">
+        {stats.map((stat, index) => (
+          <div key={index} className="text-center">
+            <div className="text-2xl md:text-3xl font-bold text-gold mb-2">
+              {stat.number}
+            </div>
+            <p className="text-xs md:text-sm text-gray-700 leading-snug">
+              {stat.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Comparison Cards - After stats */}
+      <div className="mb-8 md:mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          {comparisonData.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white border border-gray-200 rounded-lg p-3 md:p-4 hover:shadow-md transition-shadow"
+            >
+              {/* University Name */}
+              <h3 className="text-sm md:text-base font-bold text-navy mb-2 md:mb-3">
+                {item.university}
+              </h3>
+
+              {/* Other Students */}
+              <div className="mb-2">
+                <div className="flex justify-between items-center mb-1">
+                  <span className="text-xs text-gray-600">Other Students</span>
+                  <span className="text-xs font-semibold text-gray-700">
+                    {item.otherStudents} out of 100
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-1.5 md:h-2">
+                  <div
+                    className="bg-gray-400 h-1.5 md:h-2 rounded-full transition-all duration-500"
+                    style={{ width: `${item.otherStudents}%` }}
+                  ></div>
+                </div>
+              </div>
+
+              {/* Our Students */}
+              <div className="mb-2">
+                <div className="flex justify-between items-center mb-1">
+                  <span className="text-xs text-gray-600">Our Students</span>
+                  <span className="text-xs font-semibold text-navy">
+                    {item.ourStudents} out of 100
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-1.5 md:h-2">
+                  <div
+                    className="bg-gold h-1.5 md:h-2 rounded-full transition-all duration-500"
+                    style={{ width: `${item.ourStudents}%` }}
+                  ></div>
+                </div>
+              </div>
+
+              {/* Success Rate Badge */}
+              <div className="flex justify-center mt-2">
+                <span className="inline-block bg-navy/5 text-navy text-xs font-semibold px-2 py-1 rounded-full">
+                  {item.multiplier} Higher
+                </span>
+              </div>
+            </div>
           ))}
         </div>
+      </div>
 
-        <div className="mt-12 text-center text-sm text-gray-500">
-          University logos will be displayed here
+      {/* Universities Label - Before logos */}
+      <div className="text-center mb-4">
+        <span className="text-xs font-semibold tracking-widest uppercase text-gold">
+          Universities Our Students Got Into
+        </span>
+      </div>
+
+      {/* University Logos - Marquee at the bottom */}
+      <div className="overflow-hidden relative">
+        <div
+          className="flex space-x-4 md:space-x-6"
+          style={{
+            animation: 'marquee 60s linear infinite',
+            width: 'max-content'
+          }}
+        >
+          {[...universities, ...universities, ...universities].map((university, index) => (
+            <div
+              key={`${university.name}-${index}`}
+              className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-gray-100 rounded-lg flex items-center justify-center p-2 transition-all duration-300 grayscale hover:grayscale-0"
+            >
+              <img
+                src={`/uni-logos/${university.file}`}
+                alt={`${university.name} logo`}
+                className="w-full h-full object-contain"
+                loading="lazy"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement
+                  target.style.display = 'none'
+                }}
+              />
+            </div>
+          ))}
         </div>
-      </TextContainer>
+      </div>
     </Section>
   )
 }

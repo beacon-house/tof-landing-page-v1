@@ -17,30 +17,36 @@ export const AuthoritySection: React.FC = () => {
         </div>
 
         <TextContainer className="order-1 lg:order-2">
-          <p className="text-xl md:text-2xl text-navy mb-12 leading-relaxed">
+          <div className="mb-6">
+            <span className="text-xs font-semibold tracking-widest uppercase text-gold">
+              What Actually Matters
+            </span>
+          </div>
+
+          <p className="font-serif text-2xl md:text-3xl text-navy mb-12 leading-relaxed">
             In today's admissions world, what matters is:
           </p>
 
           <ul className="space-y-6 text-lg md:text-xl text-gray-700 mb-16">
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>real strengths</span>
+              <span>Real strengths<span className="text-gray-500">; not a long list of activities</span></span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>curiosity and initiative</span>
+              <span>Authentic curiosity & initiative<span className="text-gray-500">; not checkbox achievements</span></span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>depth over activity-collecting</span>
+              <span>Depth<span className="text-gray-500">; not activity collecting</span></span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>clarity of direction</span>
+              <span>Direction that connects interests to pathways<span className="text-gray-500">; not scattered interests</span></span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>a story that makes sense</span>
+              <span>A story that stays consistent across Grades 8–12<span className="text-gray-500">; not last-minute scrambling</span></span>
             </li>
           </ul>
 

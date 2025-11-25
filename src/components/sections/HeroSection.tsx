@@ -23,21 +23,18 @@ export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore
 
       <div className="relative z-10 max-w-content mx-auto px-6 md:px-8 lg:px-12 py-16 md:py-24">
         <div className="max-w-text mx-auto text-center">
+          <div className="flex flex-col items-center justify-center gap-3 mb-12">
+            <StatPill />
+          </div>
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-8">
             The Hardest Part of Admissions Is Knowing What Actually Matters.
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed">
             For most students, the real challenge isn't marks —<br className="hidden sm:inline" />
             it's not having <span className="cursive-keyword">clarity</span> on the path.
           </p>
-
-          <div className="flex flex-col items-center justify-center gap-3 mb-12">
-            <p className="text-base md:text-lg text-gray-600">
-              Founder-led guidance for ambitious IB + IGCSE families.
-            </p>
-            <StatPill />
-          </div>
 
           <Button onClick={onLearnMore} variant="primary" className="min-w-[200px]">
             Learn More
@@ -48,7 +45,7 @@ export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore
             <span className="hidden sm:inline">|</span>
             <span>150+ Former Admissions Officers</span>
             <span className="hidden sm:inline">|</span>
-            <span>120+ Ivy League admits (2024)</span>
+            <span>Founder Led Guidance</span>
           </div>
 
           <div className="mt-[60px] flex justify-center">

@@ -1,6 +1,5 @@
-// Lead capture form modal with Supabase integration
+// Lead capture form modal (no database integration)
 import React, { useState } from 'react'
-import { supabase } from '../lib/supabase'
 import { Button } from './Button'
 
 interface LeadCaptureModalProps {
@@ -48,21 +47,19 @@ export const LeadCaptureModal: React.FC<LeadCaptureModalProps> = ({
     setError('')
 
     try {
-      const { error: submitError } = await supabase
-        .from('leads')
-        .insert([
-          {
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            student_grade: formData.studentGrade,
-            school_name: formData.schoolName,
-            request_type: type,
-            created_at: new Date().toISOString()
-          }
-        ])
+      // Log form data to console (no database)
+      console.log('Form submission:', {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        student_grade: formData.studentGrade,
+        school_name: formData.schoolName,
+        request_type: type,
+        created_at: new Date().toISOString()
+      })
 
-      if (submitError) throw submitError
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 500))
 
       setIsSuccess(true)
       setTimeout(() => {
