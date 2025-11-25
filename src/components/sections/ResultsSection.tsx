@@ -15,7 +15,7 @@ export const ResultsSection: React.FC = () => {
       <TextContainer center>
         <p className="font-serif text-2xl md:text-3xl text-navy mb-6 leading-relaxed">
           When clarity and effort come together,<br className="hidden sm:inline" />
-          <span className="font-bold">great outcomes follow naturally.</span>
+          <span className="font-bold">great outcomes follow <span className="font-cursive text-[1.4em] relative inline-block" style={{borderBottom: '2px solid rgba(253, 183, 26, 0.5)', paddingBottom: '2px'}}>naturally</span>.</span>
         </p>
 
         <p className="text-lg md:text-xl text-gray-700 mb-16">

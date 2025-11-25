@@ -1,6 +1,7 @@
 // Section A - Hero section with Learn More CTA
 import React from 'react'
 import { Button } from '../Button'
+import { StatPill } from '../StatPill'
 
 export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore }) => {
   return (
@@ -28,12 +29,15 @@ export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore
 
           <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
             For most students, the real challenge isn't marks —<br className="hidden sm:inline" />
-            it's not having clarity on the path.
+            it's not having <span className="font-cursive text-[1.4em] text-navy relative inline-block" style={{borderBottom: '2px solid rgba(253, 183, 26, 0.5)', paddingBottom: '2px'}}>clarity</span> on the path.
           </p>
 
-          <p className="text-base md:text-lg text-gray-600 mb-12">
-            Founder-led guidance for ambitious IB + IGCSE families.
-          </p>
+          <div className="flex flex-col items-center justify-center gap-3 mb-12">
+            <p className="text-base md:text-lg text-gray-600">
+              Founder-led guidance for ambitious IB + IGCSE families.
+            </p>
+            <StatPill />
+          </div>
 
           <Button onClick={onLearnMore} variant="primary" className="min-w-[200px]">
             Learn More

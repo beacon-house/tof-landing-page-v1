@@ -5,11 +5,13 @@
 @layer base {
   body {
     @apply font-sans antialiased text-gray-900;
+    overflow-x: hidden;
   }
 
   html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
   }
 
   section {
