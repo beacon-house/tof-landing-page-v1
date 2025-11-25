@@ -24,4 +24,15 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .cursive-keyword {
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #003366;
+    text-decoration: underline;
+    text-decoration-color: rgba(253, 183, 26, 0.5);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
 }

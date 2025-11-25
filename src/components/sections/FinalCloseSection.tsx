@@ -29,7 +29,7 @@ export const FinalCloseSection: React.FC<{
             Clarity is possible.
           </p>
           <p className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-navy leading-relaxed">
-            And it changes <span className="font-cursive text-[1.4em] relative inline-block" style={{borderBottom: '2px solid rgba(253, 183, 26, 0.5)', paddingBottom: '2px'}}>everything</span>.
+            And it changes <span className="cursive-keyword">everything</span>.
           </p>
         </div>
 
