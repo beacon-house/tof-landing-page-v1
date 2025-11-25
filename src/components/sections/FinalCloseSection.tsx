@@ -9,7 +9,7 @@ export const FinalCloseSection: React.FC<{
   onSecondaryCTA: () => void
 }> = ({ onPrimaryCTA, onSecondaryCTA }) => {
   return (
-    <Section id="contact" className="relative py-20 md:py-32">
+    <Section id="contact" className="relative py-16 md:py-20">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop"
@@ -21,19 +21,11 @@ export const FinalCloseSection: React.FC<{
       </div>
 
       <TextContainer center className="relative z-10">
-        <div className="space-y-6 mb-16">
-          <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-navy leading-relaxed">
-            Admissions doesn't have to feel chaotic.
-          </p>
-          <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-navy leading-relaxed">
-            Clarity is possible.
-          </p>
-          <p className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-navy leading-relaxed">
-            And it changes <span className="cursive-keyword">everything</span>.
-          </p>
-        </div>
+        <p className="text-2xl md:text-3xl font-serif text-navy leading-relaxed mb-12">
+          Let's start with <span className="cursive-keyword">clarity</span>.
+        </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-20">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button onClick={onPrimaryCTA} variant="primary" className="w-full sm:w-auto min-w-[280px]">
             Book a Founder Strategy Call
           </Button>

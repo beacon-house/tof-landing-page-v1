@@ -13,18 +13,35 @@ const trustPoints = [
 
 export const TrustSection: React.FC = () => {
   return (
-    <Section id="trust" className="relative min-h-screen flex items-center bg-lightGray">
-      <div className="max-w-4xl mx-auto w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-navy mb-16 text-center">
-          Why Families Choose Us
-        </h2>
+    <Section id="trust" className="relative py-16 md:py-20 flex items-center bg-lightGray">
+      <div className="max-w-5xl mx-auto w-full">
+        {/* Section Marker */}
+        <div className="text-center mb-5">
+          <span className="text-xs font-semibold tracking-widest uppercase text-gold">
+            Why Beacon House
+          </span>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Three Opening Lines */}
+        <div className="text-center mb-8 md:mb-10 space-y-3 md:space-y-4">
+          <p className="font-serif text-xl md:text-2xl text-navy leading-relaxed">
+            Admissions doesn't have to feel chaotic.
+          </p>
+          <p className="font-serif text-xl md:text-2xl text-navy leading-relaxed">
+            Clarity is possible.
+          </p>
+          <p className="font-serif text-xl md:text-2xl font-bold text-navy leading-relaxed">
+            And it changes <span className="cursive-keyword">everything</span>.
+          </p>
+        </div>
+
+        {/* Trust Points */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
           {trustPoints.map((point, index) => (
-            <div key={index} className="flex items-start bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center mr-4 mt-1">
+            <div key={index} className="flex items-start bg-white p-4 md:p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold flex items-center justify-center mr-3 mt-0.5">
                 <svg
-                  className="w-5 h-5 text-navy"
+                  className="w-4 h-4 text-navy"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -35,7 +52,7 @@ export const TrustSection: React.FC = () => {
                   <path d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
-              <p className="text-lg md:text-xl text-gray-700 font-medium">
+              <p className="text-sm md:text-base text-gray-700 font-medium leading-snug">
                 {point}
               </p>
             </div>
