@@ -9,12 +9,15 @@ export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore
         <img
           src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2128&auto=format&fit=crop"
           alt="Educational environment"
-          className="w-full h-full object-cover object-center opacity-[0.15]"
-          style={{ filter: 'blur(1px)' }}
+          className="w-full h-full object-cover object-center opacity-30"
           loading="eager"
         />
-        <div className="absolute inset-0 backdrop-blur-sm bg-white/40"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/60 to-white/80"></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'radial-gradient(ellipse 800px 600px at center, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 25%, rgba(255, 255, 255, 0.85) 40%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.1) 100%)'
+          }}
+        ></div>
       </div>
 
       <div className="relative z-10 max-w-content mx-auto px-6 md:px-8 lg:px-12 py-16 md:py-24">
