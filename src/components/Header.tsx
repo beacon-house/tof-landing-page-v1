@@ -60,16 +60,16 @@ export const Header: React.FC<HeaderProps> = ({ onCTAClick }) => {
               Who We Are
             </button>
             <button
-              onClick={() => scrollToSection('process')}
-              className="text-navy hover:text-gold transition-colors font-medium text-sm"
-            >
-              Process
-            </button>
-            <button
               onClick={() => scrollToSection('results')}
               className="text-navy hover:text-gold transition-colors font-medium text-sm"
             >
               Results
+            </button>
+            <button
+              onClick={() => scrollToSection('process')}
+              className="text-navy hover:text-gold transition-colors font-medium text-sm"
+            >
+              Process
             </button>
             <button
               onClick={onCTAClick}
@@ -122,16 +122,16 @@ export const Header: React.FC<HeaderProps> = ({ onCTAClick }) => {
               Who We Are
             </button>
             <button
-              onClick={() => scrollToSection('process')}
-              className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
-            >
-              Process
-            </button>
-            <button
               onClick={() => scrollToSection('results')}
               className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
             >
               Results
+            </button>
+            <button
+              onClick={() => scrollToSection('process')}
+              className="block w-full text-left py-4 text-navy text-xl font-medium hover:text-gold transition-colors"
+            >
+              Process
             </button>
           </nav>
         </div>
