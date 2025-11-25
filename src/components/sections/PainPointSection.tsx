@@ -9,31 +9,35 @@ export const PainPointSection: React.FC = () => {
       <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
         <TextContainer>
           <p className="font-serif text-2xl md:text-3xl text-navy mb-12 leading-relaxed">
-            If you're a parent, this will feel familiar:
+            If this feels familiar, you're not alone:
           </p>
 
           <ul className="space-y-6 text-lg md:text-xl text-gray-700 mb-12">
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>Too many opinions</span>
+              <span>Many activities, no clear direction</span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>No clear starting point</span>
+              <span>Unsure what matters in Grades 8–12</span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>No way to know what actually matters</span>
+              <span>Don't know when to do what (subjects/tests/majors)</span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>Constant pressure, zero clarity</span>
+              <span>Hardworking child, scattered interests</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-gold mr-4 text-2xl">•</span>
+              <span>Conflicting advice everywhere</span>
             </li>
           </ul>
 
           <div className="space-y-3 text-xl md:text-2xl font-semibold text-navy">
             <p>This isn't a <span className="font-bold">marks</span> problem.</p>
-            <p>This is a <span className="cursive-keyword">direction</span> problem.</p>
+            <p>This is a <span className="cursive-keyword">clarity</span> problem.</p>
           </div>
         </TextContainer>
 
