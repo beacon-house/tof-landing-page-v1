@@ -16,7 +16,7 @@ export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick
           <ul className="space-y-6 text-lg md:text-xl text-gray-700 mb-12">
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>what choices actually <span className="font-cursive text-[1.4em] text-navy relative inline-block" style={{borderBottom: '2px solid rgba(253, 183, 26, 0.5)', paddingBottom: '2px'}}>matter</span></span>
+              <span>what choices actually <span className="cursive-keyword">matter</span></span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>

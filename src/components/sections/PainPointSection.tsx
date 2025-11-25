@@ -33,7 +33,7 @@ export const PainPointSection: React.FC = () => {
 
           <div className="space-y-3 text-xl md:text-2xl font-semibold text-navy">
             <p>This isn't a <span className="font-bold">marks</span> problem.</p>
-            <p>This is a <span className="font-cursive text-[1.4em] relative inline-block" style={{borderBottom: '2px solid rgba(253, 183, 26, 0.5)', paddingBottom: '2px'}}>direction</span> problem.</p>
+            <p>This is a <span className="cursive-keyword">direction</span> problem.</p>
           </div>
         </TextContainer>
 
