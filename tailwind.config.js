@@ -26,6 +26,7 @@ export default {
       },
       animation: {
         'marquee': 'marquee 40s linear infinite',
+        'marquee-slow': 'marquee 60s linear infinite',
       },
       keyframes: {
         marquee: {
