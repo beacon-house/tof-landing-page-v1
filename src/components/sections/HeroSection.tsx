@@ -32,7 +32,7 @@ export const HeroSection: React.FC<{ onLearnMore: () => void }> = ({ onLearnMore
             it's not having <span className="font-cursive text-[1.4em] text-navy relative inline-block" style={{borderBottom: '2px solid rgba(253, 183, 26, 0.5)', paddingBottom: '2px'}}>clarity</span> on the path.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">
+          <div className="flex flex-col items-center justify-center gap-3 mb-12">
             <p className="text-base md:text-lg text-gray-600">
               Founder-led guidance for ambitious IB + IGCSE families.
             </p>
