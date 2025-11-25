@@ -65,12 +65,12 @@ export const ResultsSection: React.FC = () => {
       </div>
 
       {/* Main Heading - Using proper serif font like other sections */}
-      <p className="font-serif text-2xl md:text-3xl text-navy mb-6 md:mb-8 leading-relaxed text-center">
+      <p className="font-serif text-2xl md:text-3xl text-navy mb-5 md:mb-6 leading-relaxed text-center">
         When clarity and effort come together, great outcomes follow naturally.
       </p>
 
       {/* Stats Section - Right after heading */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-6 md:mb-7">
         {stats.map((stat, index) => (
           <div key={index} className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-gold mb-2">
@@ -84,7 +84,7 @@ export const ResultsSection: React.FC = () => {
       </div>
 
       {/* Comparison Cards - After stats */}
-      <div className="mb-8 md:mb-10">
+      <div className="mb-6 md:mb-7">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           {comparisonData.map((item, index) => (
             <div
@@ -137,6 +137,13 @@ export const ResultsSection: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Cursive Closing Line */}
+      <div className="text-center mb-5">
+        <p className="text-2xl md:text-3xl text-navy">
+          <span className="cursive-keyword">Clarity → Direction → Outcomes.</span>
+        </p>
       </div>
 
       {/* Universities Label - Before logos */}

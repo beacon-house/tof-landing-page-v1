@@ -32,13 +32,6 @@ function App() {
     }
   }
 
-  const handleSeeHowWorks = () => {
-    const contactSection = document.getElementById('contact')
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   const handleBookCall = () => {
     setModalType('call')
     setIsModalOpen(true)
@@ -60,7 +53,7 @@ function App() {
         <BridgeSection onCTAClick={handleUnderstandApproach} />
         <WhoWeAreSection />
         <ResultsSection />
-        <ProcessSection onCTAClick={handleSeeHowWorks} />
+        <ProcessSection />
         <TrustSection />
         <FinalCloseSection
           onPrimaryCTA={handleBookCall}

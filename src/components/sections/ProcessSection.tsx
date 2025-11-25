@@ -1,7 +1,6 @@
 // Section G - How We Work section with 5-step process
 import React from 'react'
 import { Section } from '../Section'
-import { Button } from '../Button'
 
 interface ProcessStep {
   number: string
@@ -37,39 +36,40 @@ const processSteps: ProcessStep[] = [
   }
 ]
 
-export const ProcessSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick }) => {
+export const ProcessSection: React.FC = () => {
   return (
-    <Section id="process" className="relative min-h-screen flex items-center bg-lightGray">
+    <Section id="process" className="relative py-16 md:py-20 flex items-center bg-lightGray">
       <div className="w-full">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+        {/* Label */}
+        <div className="text-center mb-5">
+          <span className="text-xs font-semibold tracking-widest uppercase text-gold">
             Our Process
-          </h2>
+          </span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {/* Hook */}
+        <p className="font-serif text-2xl md:text-3xl text-navy mb-8 md:mb-10 leading-relaxed text-center max-w-3xl mx-auto">
+          Every journey is different, but the framework is the same: understand, plan, build, execute.
+        </p>
+
+        {/* Process Steps */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-5">
           {processSteps.map((step) => (
             <div
               key={step.number}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 duration-300"
+              className="bg-white rounded-xl p-5 md:p-6 shadow-sm hover:shadow-md transition-all duration-300"
             >
-              <div className="w-14 h-14 rounded-full bg-gold flex items-center justify-center mb-6">
-                <span className="text-3xl font-bold text-navy">{step.number}</span>
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gold flex items-center justify-center mb-4">
+                <span className="text-xl md:text-2xl font-bold text-navy">{step.number}</span>
               </div>
-              <h3 className="text-xl font-bold text-navy mb-4">
+              <h3 className="text-base md:text-lg font-bold text-navy mb-2 md:mb-3">
                 {step.title}
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 {step.description}
               </p>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <Button onClick={onCTAClick} variant="secondary">
-            See How This Works
-          </Button>
         </div>
       </div>
     </Section>
