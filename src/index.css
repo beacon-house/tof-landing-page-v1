@@ -4,7 +4,9 @@
 
 @layer base {
   body {
-    @apply font-sans antialiased text-gray-900;
+    @apply font-sans antialiased;
+    color: #1A1A1A;
+    background-color: #FFFBF5;
     overflow-x: hidden;
   }
 
@@ -28,11 +30,18 @@
   .cursive-keyword {
     font-family: 'Caveat', cursive;
     font-weight: 700;
-    font-size: 1.5em;
-    color: #003366;
-    text-decoration: underline;
-    text-decoration-color: rgba(253, 183, 26, 0.5);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
+    font-size: 1.6em;
+    background: linear-gradient(135deg, #F59E0B 0%, #FCD34D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 20px rgba(245, 158, 11, 0.3);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #001F3F 0%, #003366 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

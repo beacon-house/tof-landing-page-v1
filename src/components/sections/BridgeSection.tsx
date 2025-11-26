@@ -6,7 +6,7 @@ import { Button } from '../Button'
 
 export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick }) => {
   return (
-    <Section id="bridge" className="relative py-16 md:py-20 flex items-center bg-lightGray">
+    <Section id="bridge" className="relative py-16 md:py-20 flex items-center bg-sage">
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
         <TextContainer>
           <div className="mb-6">
@@ -23,10 +23,10 @@ export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick
             <li className="flex items-start">
               <span className="text-gold mr-3 text-xl mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-semibold text-navy text-base md:text-lg leading-snug mb-1">
+                <p className="font-sans font-semibold text-navy text-base md:text-lg leading-snug mb-1">
                   What actually matters vs what's noise
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   So you stop guessing.
                 </p>
               </div>
@@ -34,10 +34,10 @@ export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick
             <li className="flex items-start">
               <span className="text-gold mr-3 text-xl mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-semibold text-navy text-base md:text-lg leading-snug mb-1">
+                <p className="font-sans font-semibold text-navy text-base md:text-lg leading-snug mb-1">
                   What to do in each grade (8–12)
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   Know exactly what matters each year — with no confusion.
                 </p>
               </div>
@@ -45,10 +45,10 @@ export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick
             <li className="flex items-start">
               <span className="text-gold mr-3 text-xl mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-semibold text-navy text-base md:text-lg leading-snug mb-1">
+                <p className="font-sans font-semibold text-navy text-base md:text-lg leading-snug mb-1">
                   How interests become real pathways
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   From "they like many things" → "this direction makes sense."
                 </p>
               </div>
@@ -56,10 +56,10 @@ export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick
             <li className="flex items-start">
               <span className="text-gold mr-3 text-xl mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-semibold text-navy text-base md:text-lg leading-snug mb-1">
+                <p className="font-sans font-semibold text-navy text-base md:text-lg leading-snug mb-1">
                   How admissions teams think at every stage
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   So your child's choices align with what colleges actually value.
                 </p>
               </div>
@@ -67,10 +67,10 @@ export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick
             <li className="flex items-start">
               <span className="text-gold mr-3 text-xl mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-semibold text-navy text-base md:text-lg leading-snug mb-1">
+                <p className="font-sans font-semibold text-navy text-base md:text-lg leading-snug mb-1">
                   What to ignore completely
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   So your child isn't pulled into unnecessary pressure.
                 </p>
               </div>
@@ -78,10 +78,10 @@ export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick
             <li className="flex items-start">
               <span className="text-gold mr-3 text-xl mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-semibold text-navy text-base md:text-lg leading-snug mb-1">
+                <p className="font-sans font-semibold text-navy text-base md:text-lg leading-snug mb-1">
                   How to build direction with busy schedules
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   Sports, school load, multiple interests — balanced.
                 </p>
               </div>
@@ -89,17 +89,17 @@ export const BridgeSection: React.FC<{ onCTAClick: () => void }> = ({ onCTAClick
             <li className="flex items-start">
               <span className="text-gold mr-3 text-xl mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-semibold text-navy text-base md:text-lg leading-snug mb-1">
+                <p className="font-sans font-semibold text-navy text-base md:text-lg leading-snug mb-1">
                   How strengths turn into depth + impact
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   The base of a strong college story.
                 </p>
               </div>
             </li>
           </ul>
 
-          <p className="text-xl md:text-2xl font-semibold text-navy mb-6 md:mb-8">
+          <p className="text-xl md:text-2xl font-sans font-semibold text-navy mb-6 md:mb-8">
             This is where clarity begins.
           </p>
 

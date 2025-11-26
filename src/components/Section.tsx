@@ -5,18 +5,18 @@ interface SectionProps {
   children: React.ReactNode
   className?: string
   id?: string
-  background?: 'white' | 'lightGray'
+  background?: 'cream' | 'sage'
 }
 
 export const Section: React.FC<SectionProps> = ({
   children,
   className = '',
   id,
-  background = 'white'
+  background = 'cream'
 }) => {
   const bgColors = {
-    white: 'bg-white',
-    lightGray: 'bg-lightGray'
+    cream: 'bg-cream',
+    sage: 'bg-sage'
   }
 
   return (

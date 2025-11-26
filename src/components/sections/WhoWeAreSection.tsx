@@ -27,7 +27,7 @@ export const WhoWeAreSection: React.FC = () => {
             Beacon House exists to give families personalized, clarity-first guidance that traditional counselling models rarely offer.
           </p>
 
-          <p className="text-base md:text-lg text-gray-700 mb-5 md:mb-6 leading-relaxed">
+          <p className="text-base md:text-lg font-sans font-light text-charcoal mb-5 md:mb-6 leading-relaxed">
             Through our partnership with <span className="font-bold text-navy">InGenius Prep</span>, we bring:
           </p>
 
@@ -35,10 +35,10 @@ export const WhoWeAreSection: React.FC = () => {
             <li className="flex items-start">
               <span className="text-gold mr-3 text-lg mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-bold text-navy text-sm md:text-base leading-snug">
+                <p className="font-sans font-bold text-navy text-sm md:text-base leading-snug">
                   Former Admissions Officers
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   Experts who know how applications are evaluated
                 </p>
               </div>
@@ -46,10 +46,10 @@ export const WhoWeAreSection: React.FC = () => {
             <li className="flex items-start">
               <span className="text-gold mr-3 text-lg mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-bold text-navy text-sm md:text-base leading-snug">
+                <p className="font-sans font-bold text-navy text-sm md:text-base leading-snug">
                   Graduate Coaches from top global schools
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   Mentors who help shape direction, depth, and narrative
                 </p>
               </div>
@@ -57,10 +57,10 @@ export const WhoWeAreSection: React.FC = () => {
             <li className="flex items-start">
               <span className="text-gold mr-3 text-lg mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-bold text-navy text-sm md:text-base leading-snug">
+                <p className="font-sans font-bold text-navy text-sm md:text-base leading-snug">
                   India-context guidance
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   Teams who understand school realities & pressures
                 </p>
               </div>
@@ -68,10 +68,10 @@ export const WhoWeAreSection: React.FC = () => {
             <li className="flex items-start">
               <span className="text-gold mr-3 text-lg mt-1 flex-shrink-0">•</span>
               <div>
-                <p className="font-bold text-navy text-sm md:text-base leading-snug">
+                <p className="font-sans font-bold text-navy text-sm md:text-base leading-snug">
                   World-class opportunities
                 </p>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="font-sans font-light text-charcoal text-sm md:text-base leading-relaxed">
                   Research mentorship, signature projects, internships
                 </p>
               </div>

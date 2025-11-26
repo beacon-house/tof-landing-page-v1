@@ -5,7 +5,7 @@ import { StatPill } from '../StatPill'
 
 export const HeroSection: React.FC<{ onApplyToTalk: () => void }> = ({ onApplyToTalk }) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-white pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-cream pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2128&auto=format&fit=crop"
@@ -27,11 +27,11 @@ export const HeroSection: React.FC<{ onApplyToTalk: () => void }> = ({ onApplyTo
             <StatPill />
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-navy leading-tight mb-8">
             The Hardest Part of Admissions Is Knowing What Actually Matters.
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl font-sans font-light text-navy/70 mb-12 leading-relaxed">
             For most students, the real challenge isn't marks —<br className="hidden sm:inline" />
             it's not having <span className="cursive-keyword">clarity</span> on the path.
           </p>
@@ -40,7 +40,7 @@ export const HeroSection: React.FC<{ onApplyToTalk: () => void }> = ({ onApplyTo
             Talk to Founders
           </Button>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm font-medium text-navy/90">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm font-sans font-medium text-navy/90">
             <span>35+ top IB & IGCSE schools</span>
             <span className="hidden sm:inline">|</span>
             <span>150+ Former Admissions Officers</span>

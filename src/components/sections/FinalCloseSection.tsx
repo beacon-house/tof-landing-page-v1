@@ -13,7 +13,7 @@ export const FinalCloseSection: React.FC = () => {
           className="w-full h-full object-cover opacity-5"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/95 to-white"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-cream/90 via-cream/95 to-cream"></div>
       </div>
 
       <TextContainer center className="relative z-10">

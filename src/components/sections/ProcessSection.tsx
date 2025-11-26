@@ -38,7 +38,7 @@ const processSteps: ProcessStep[] = [
 
 export const ProcessSection: React.FC = () => {
   return (
-    <Section id="process" className="relative py-12 md:py-16 flex items-center bg-lightGray">
+    <Section id="process" className="relative py-12 md:py-16 flex items-center bg-sage">
       <div className="w-full">
         {/* Label */}
         <div className="text-center mb-5">
@@ -60,12 +60,12 @@ export const ProcessSection: React.FC = () => {
               className="bg-white rounded-xl p-5 md:p-6 shadow-sm hover:shadow-md transition-all duration-300"
             >
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gold flex items-center justify-center mb-4">
-                <span className="text-xl md:text-2xl font-bold text-navy">{step.number}</span>
+                <span className="text-xl md:text-2xl font-sans font-bold text-navy">{step.number}</span>
               </div>
-              <h3 className="text-base md:text-lg font-bold text-navy mb-2 md:mb-3">
+              <h3 className="text-base md:text-lg font-sans font-bold text-navy mb-2 md:mb-3">
                 {step.title}
               </h3>
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+              <p className="text-sm md:text-base font-sans font-light text-charcoal leading-relaxed">
                 {step.description}
               </p>
             </div>

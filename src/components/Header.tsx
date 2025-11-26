@@ -32,7 +32,7 @@ export const Header: React.FC<HeaderProps> = ({ onCTAClick }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 bg-cream transition-shadow duration-300 ${
         isScrolled ? 'shadow-md' : ''
       }`}
     >
@@ -107,7 +107,7 @@ export const Header: React.FC<HeaderProps> = ({ onCTAClick }) => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-16 bg-white z-40">
+        <div className="md:hidden fixed inset-0 top-16 bg-cream z-40">
           <nav className="px-6 py-8 space-y-6 h-full">
             <button
               onClick={() => scrollToSection('bridge')}

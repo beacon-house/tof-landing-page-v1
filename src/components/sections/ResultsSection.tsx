@@ -73,10 +73,10 @@ export const ResultsSection: React.FC = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-6 md:mb-7">
         {stats.map((stat, index) => (
           <div key={index} className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-gold mb-2">
+            <div className="text-2xl md:text-3xl font-sans font-bold text-gold mb-2">
               {stat.number}
             </div>
-            <p className="text-xs md:text-sm text-gray-700 leading-snug">
+            <p className="text-xs md:text-sm font-sans font-light text-charcoal leading-snug">
               {stat.description}
             </p>
           </div>
@@ -92,15 +92,15 @@ export const ResultsSection: React.FC = () => {
               className="bg-white border border-gray-200 rounded-lg p-3 md:p-4 hover:shadow-md transition-shadow"
             >
               {/* University Name */}
-              <h3 className="text-sm md:text-base font-bold text-navy mb-2 md:mb-3">
+              <h3 className="text-sm md:text-base font-sans font-bold text-navy mb-2 md:mb-3">
                 {item.university}
               </h3>
 
               {/* Other Students */}
               <div className="mb-2">
                 <div className="flex justify-between items-center mb-1">
-                  <span className="text-xs text-gray-600">Other Students</span>
-                  <span className="text-xs font-semibold text-gray-700">
+                  <span className="text-xs font-sans font-light text-charcoal">Other Students</span>
+                  <span className="text-xs font-sans font-semibold text-charcoal">
                     {item.otherStudents} out of 100
                   </span>
                 </div>
@@ -115,8 +115,8 @@ export const ResultsSection: React.FC = () => {
               {/* Our Students */}
               <div className="mb-2">
                 <div className="flex justify-between items-center mb-1">
-                  <span className="text-xs text-gray-600">Our Students</span>
-                  <span className="text-xs font-semibold text-navy">
+                  <span className="text-xs font-sans font-light text-charcoal">Our Students</span>
+                  <span className="text-xs font-sans font-semibold text-navy">
                     {item.ourStudents} out of 100
                   </span>
                 </div>
@@ -130,7 +130,7 @@ export const ResultsSection: React.FC = () => {
 
               {/* Success Rate Badge */}
               <div className="flex justify-center mt-2">
-                <span className="inline-block bg-navy/5 text-navy text-xs font-semibold px-2 py-1 rounded-full">
+                <span className="inline-block bg-navy/5 text-navy text-xs font-sans font-semibold px-2 py-1 rounded-full">
                   {item.multiplier} Higher
                 </span>
               </div>
@@ -141,7 +141,7 @@ export const ResultsSection: React.FC = () => {
 
       {/* Cursive Closing Line */}
       <div className="text-center mb-5">
-        <p className="text-2xl md:text-3xl text-navy">
+        <p className="text-2xl md:text-3xl font-sans text-navy">
           <span className="cursive-keyword">Clarity → Direction → Outcomes.</span>
         </p>
       </div>

@@ -13,7 +13,7 @@ const trustPoints = [
 
 export const TrustSection: React.FC = () => {
   return (
-    <Section id="trust" className="relative py-12 md:py-16 flex items-center bg-lightGray">
+    <Section id="trust" className="relative py-12 md:py-16 flex items-center bg-sage">
       <div className="w-full">
         {/* Section Marker */}
         <div className="text-center mb-5">
@@ -51,7 +51,7 @@ export const TrustSection: React.FC = () => {
                   <path d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
-              <p className="text-sm md:text-base text-gray-700 font-medium leading-snug">
+              <p className="text-sm md:text-base font-sans font-medium text-charcoal leading-snug">
                 {point}
               </p>
             </div>

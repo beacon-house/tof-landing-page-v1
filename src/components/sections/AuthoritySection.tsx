@@ -27,30 +27,30 @@ export const AuthoritySection: React.FC = () => {
             In today's admissions world, what matters is:
           </p>
 
-          <ul className="space-y-6 text-lg md:text-xl text-gray-700 mb-16">
+          <ul className="space-y-6 text-lg md:text-xl font-sans font-light text-charcoal mb-16">
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>Real strengths<span className="text-gray-500">; not a long list of activities</span></span>
+              <span>Real strengths<span className="text-navy/50">; not a long list of activities</span></span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>Authentic curiosity & initiative<span className="text-gray-500">; not checkbox achievements</span></span>
+              <span>Authentic curiosity & initiative<span className="text-navy/50">; not checkbox achievements</span></span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>Depth<span className="text-gray-500">; not activity collecting</span></span>
+              <span>Depth<span className="text-navy/50">; not activity collecting</span></span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>Direction that connects interests to pathways<span className="text-gray-500">; not scattered interests</span></span>
+              <span>Direction that connects interests to pathways<span className="text-navy/50">; not scattered interests</span></span>
             </li>
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
-              <span>A story that stays consistent across Grades 8–12<span className="text-gray-500">; not last-minute scrambling</span></span>
+              <span>A story that stays consistent across Grades 8–12<span className="text-navy/50">; not last-minute scrambling</span></span>
             </li>
           </ul>
 
-          <p className="text-2xl md:text-3xl font-bold text-navy">
+          <p className="text-2xl md:text-3xl font-sans font-bold text-navy">
             Admissions teams reward <span className="cursive-keyword">clarity</span>.
           </p>
         </TextContainer>

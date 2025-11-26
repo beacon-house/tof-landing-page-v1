@@ -18,7 +18,7 @@ export const PainPointSection: React.FC = () => {
             If this feels familiar, you're not alone:
           </p>
 
-          <ul className="space-y-6 text-lg md:text-xl text-gray-700 mb-12">
+          <ul className="space-y-6 text-lg md:text-xl font-sans font-light text-charcoal mb-12">
             <li className="flex items-start">
               <span className="text-gold mr-4 text-2xl">•</span>
               <span>Many activities, no clear direction</span>
@@ -41,7 +41,7 @@ export const PainPointSection: React.FC = () => {
             </li>
           </ul>
 
-          <div className="space-y-3 text-xl md:text-2xl font-semibold text-navy">
+          <div className="space-y-3 text-xl md:text-2xl font-sans font-semibold text-navy">
             <p>This isn't a <span className="font-bold">marks</span> problem.</p>
             <p>This is a <span className="cursive-keyword">clarity</span> problem.</p>
           </div>
