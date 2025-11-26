@@ -27,7 +27,7 @@ export const StickyMobileCTA: React.FC<StickyMobileCTAProps> = ({ onClick }) => 
           onClick={onClick}
           className="w-full bg-gold text-navy py-3.5 px-6 rounded-lg font-semibold shadow-lg hover:bg-gold/90 transition-all active:scale-95"
         >
-          Apply to Founders
+          Request an Evaluation
         </button>
       </div>
     </div>

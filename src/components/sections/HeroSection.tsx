@@ -37,7 +37,7 @@ export const HeroSection: React.FC<{ onApplyToTalk: () => void }> = ({ onApplyTo
           </p>
 
           <Button onClick={onApplyToTalk} variant="primary" className="min-w-[200px]">
-            Apply to Founders
+            Request an Evaluation
           </Button>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm font-medium text-navy/90">
