@@ -78,7 +78,7 @@ export const Header: React.FC<HeaderProps> = ({ onCTAClick }) => {
               }`}
               style={{ transition: 'all 0.3s ease-in-out' }}
             >
-              Talk to Founders
+              Apply to Founders
             </button>
           </nav>
 
